@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+## How To Handle Routing in React Apps with React Router
+
+React Router is an important part of any React project. When you build single page applications, you’ll use routes to separate your application into usable pieces that users can access easily and consistently.
+
+As you start to separate your components into routes, you’ll be able to take advantage of code splitting, preserving state via query parameters, and other tools to improve the user experience.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
