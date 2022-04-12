@@ -1,15 +1,21 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Switch, useParams, useRouteMatch } from "react-router-dom";
 import Beluga from "./Beluga";
 import Blue from "./Blue";
 
 const Whale = () => {
-  const { type } = useParams();
+  const { path } = useRouteMatch();
   return (
     <>
       <h2>Whale</h2>
-      {type === "beluga" && <Beluga />}
-      {type === "blue" && <Blue />}
+      <Switch>
+        <Route path={`${path}/beluga`}>
+          <Beluga />
+        </Route>
+        <Route path={`${path}/blue`}>
+          <Blue />
+        </Route>
+      </Switch>
     </>
   );
 };

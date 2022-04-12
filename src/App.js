@@ -41,9 +41,6 @@ function App() {
           <Route exact path="/whale">
             <Whale />
           </Route>
-          <Route path="/whale/:type">
-            <Whale />
-          </Route>
         </Switch>
       </BrowserRouter>
     </div>
